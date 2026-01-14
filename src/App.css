@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.content {
+    flex-grow: 1;
+    padding: 1rem 2rem;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    align-items: stretch;
+    background-color: #112233;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    background-color: #00aaff;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    width: 0;
+    border-radius: 1px;
+
+    transition: 0.25s ease-in-out;
+
+    position: absolute;
+}
+
+.navbar a:hover::after ,
+.navbar a.active::after {
+    width: 100%;
+}
+

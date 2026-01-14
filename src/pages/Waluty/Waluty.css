@@ -1,0 +1,10 @@
+.currencyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.currencyDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
